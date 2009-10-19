@@ -56,9 +56,7 @@ sub email_info {
     $msg->send || croak "Could not send email";
 }
 
-
 MAIN: {
-    
     # Grab the page, and pass process it with HTML::TokeParser
     my $ua = LWP::UserAgent->new;
     $ua->timeout(10);
